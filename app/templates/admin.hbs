@@ -1,0 +1,11 @@
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.author}}</li>
+  <button {{action 'delete' question}}>Delete</button>
+    <!-- {{update-question question=question update="update"}} -->
+  {{/each}}
+</ul>
+
+<h1>Add a Question</h1>
+{{new-question save2="save3"}}

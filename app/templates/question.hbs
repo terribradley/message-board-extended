@@ -1,0 +1,13 @@
+<section class="main-content">
+   <h4>{{model.author}}</h4>
+   <h3>{{model.question}}</h3>
+   <p>Notes: {{model.notes}}</p>
+ </section>
+
+ <ul>
+   {{#each model.answers as |answer|}}
+     {{answer-tile answer=answer}}
+   {{/each}}
+ </ul>
+
+ {{new-answer save2="save3" post=model}}

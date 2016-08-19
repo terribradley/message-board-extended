@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+       apiKey: "AIzaSyCu1ihfMWe5pknZwovyWk9Pj8zP3it_Ir8",
+       authDomain: "message-board-5e970.firebaseapp.com",
+       databaseURL: "https://message-board-5e970.firebaseio.com",
+       storageBucket: "",
+   },
     modulePrefix: 'message-board',
     environment: environment,
     baseURL: '/',
