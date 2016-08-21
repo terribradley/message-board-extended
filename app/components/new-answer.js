@@ -9,9 +9,10 @@ export default Ember.Component.extend({
     save1() {
       var params = {
         username: this.get('username') ? this.get('username') : "",
-        answer: this.get('answer') ? this.get('answer') : ""
+        content: this.get('content') ? this.get('content') : ""
       };
       this.set('addNewAnswer', false);
+        {{debugger}}
       this.sendAction('save2', params);
     }
   }

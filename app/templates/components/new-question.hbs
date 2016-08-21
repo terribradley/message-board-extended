@@ -6,8 +6,8 @@
         {{input value=author id="author"}}
       </div>
       <div class="form-group">
-        <label for="question">Question</label>
-        {{input value=question id="question"}}
+        <label for="content">Question</label>
+        {{input value=content id="content"}}
       </div>
 
       <div class="form-group">
@@ -19,5 +19,5 @@
     </form>
   </div>
 {{else}}
-<button {{action 'questionForm'}}>Show Comment Form</button>
+<button {{action 'questionForm'}}>Add a Question</button>
 {{/if}}
