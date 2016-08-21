@@ -1,5 +1,10 @@
-<h1>index hi</h1>
+<section class="intro">
+  <h1>Welcome to Color Theory</h1>
+  <h3>Your Message Board to ask all things Color</h3>
+</section>
 
   {{#each model as |question|}}
-     {{question-tile question=question}}
+  <section class="question-tile">
+    {{question-tile question=question}}
+  </section>
   {{/each}}
