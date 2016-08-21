@@ -2,7 +2,8 @@
 <ul>
   {{#each model as |question|}}
     <li>{{question.author}}</li>
-  <button {{action 'delete' question}}>Delete</button>
+    <li>{{question.content}}</li>
+  {{delete-question question=model destroyQuestion="destroyQuestion"}}
     {{update-question question=question update="update"}}
   {{/each}}
 </ul>

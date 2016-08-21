@@ -6,8 +6,8 @@
 
  <ul>
    {{#each model.answers as |answer|}}
-     {{answer-tile answer=answer}}
+     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
    {{/each}}
  </ul>
 
- {{new-answer save2="save3" question=model}}
+ {{new-answer saveAnswer="saveAnswer" question=model}}

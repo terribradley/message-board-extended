@@ -1,2 +1,3 @@
-{{#link-to 'answer' answer.id}}<h4>{{answer.username}}</h4>{{/link-to}}
+<h4>{{answer.username}}</h4>
 <p>{{answer.content}} </p>
+<button {{action 'deleteAnswer' answer}}>Delete Answer</button>
