@@ -41,31 +41,35 @@ nav {
     display: flex;
     flex-wrap: wrap;
     .question-tile {
-      padding: 10px;
+      padding: 20px;
       width: 45%;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      h4  {
-        text-transform: uppercase;
-        margin-bottom: 0;
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-        text-transform: capitalize;
-      }
-      button {
-        width: 100%;
-        background: white;
-        border: 2px solid black;
-        padding: 10px;
-        a {
-          margin-top: auto;
-          text-decoration: none;
+      .ember-view {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        h4  {
           text-transform: uppercase;
-          color: black;
-          font-size: 1.2em;
+          margin-bottom: 0;
+          text-align: center;
+        }
+        h2 {
+          text-align: center;
+          text-transform: capitalize;
+        }
+        button {
+          width: 100%;
+          background: white;
+          border: 2px solid black;
+          height: 18%;
+          margin-top: auto;
+          padding: 3%;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            font-size: 1.2em;
+
+          }
         }
       }
       &:nth-of-type(even) {
