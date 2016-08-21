@@ -3,8 +3,8 @@
   {{#each model as |question|}}
     <li>{{question.author}}</li>
     <li>{{question.content}}</li>
-  {{delete-question question=model destroyQuestion="destroyQuestion"}}
-    {{update-question question=question update="update"}}
+  {{delete-question question=question destroyQuestion="destroyQuestion"}}
+  {{update-question question=question update="update"}}
   {{/each}}
 </ul>
 
