@@ -1,19 +1,11 @@
 {{#if addNewAnswer}}
-  <h1>New Answer</h1>
-    <div>
-      <form>
-        <div class="form-group">
-          <label for="username">User Name</label>
-          {{input value=username id="username"}}
-        </div>
-
-        <div class="form-group">
-          <label for="content">Answer</label>
-          {{input value=content id="content"}}
-        </div>
-        <button {{action 'saveAnswer'}}>Save</button>
-      </form>
-    </div>
+  <form>
+    <label for="username">Your Name</label>
+    {{input value=username id="username"}}
+    <label for="content"> Your Answer</label>
+    {{input value=content id="content"}}
+    <button {{action 'saveAnswer'}}>Save</button>
+  </form>
 {{else}}
-    <button {{action 'newAnswerForm'}}>New Answer</button>
+  <button {{action 'newAnswerForm'}}>Add an Answer</button>
 {{/if}}

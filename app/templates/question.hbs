@@ -1,13 +1,13 @@
-<section class="main-content">
-   <h4>{{model.author}}</h4>
+<section class="question-content">
+   <h4> This is {{model.author}}'s question</h4>
    <h3>{{model.content}}</h3>
    <p>Notes: {{model.notes}}</p>
+   <div class="add-answer">
+      {{new-answer saveAnswer="saveAnswer" question=model}}
+   </div>
  </section>
-
- <ul>
-   {{#each model.answers as |answer|}}
-     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-   {{/each}}
- </ul>
-
- {{new-answer saveAnswer="saveAnswer" question=model}}
+<section class ="answer-content">
+  {{#each model.answers as |answer|}}
+  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</section>

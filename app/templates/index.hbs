@@ -3,6 +3,9 @@
   <h3>Your Message Board to ask all things Color</h3>
 </section>
 <section class="main-content">
+  <div class="add">
+    {{new-question save2="save3"}}
+  </div>
     {{#each model as |question|}}
     <section class="question-tile">
       {{question-tile question=question}}

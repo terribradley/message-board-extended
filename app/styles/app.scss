@@ -1,32 +1,36 @@
+
 nav {
   display: flex;
   justify-content: flex-end;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: #086E62;
+  background-image: url('../img/gradient.jpg');
   ul {
     display: flex;
     li {
       margin-right: 40px;
       margin-top: 15px;
       list-style-type: none;
+      font-size: 1.2em;
     }
     a {
       text-decoration: none;
-      color: #D5E8E6;
+      color: black;;
     }
   }
 }
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  background-image: url('../img/gradient.jpg');
   .intro {
-    margin: 10% 0;
-    background-color: #E8E8E8;
+    margin: 2% 0;
+    background-color: #213563;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 70px;
+    color: white;
     h1 {
       font-size: 2.8em;
       text-align: center;
@@ -40,9 +44,12 @@ nav {
   .main-content {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10%;
     .question-tile {
       padding: 20px;
       width: 45%;
+      margin: auto;
+      background-color: transparentize(white, .4);
       .ember-view {
         height: 250px;
         display: flex;
@@ -63,23 +70,146 @@ nav {
           height: 18%;
           margin-top: auto;
           padding: 3%;
+          &:hover {
+            background-color: #213563;
+          }
           a {
             text-decoration: none;
             text-transform: uppercase;
             color: black;
             font-size: 1.2em;
-
+          &:hover {
+            color: white;
+          }
           }
         }
       }
-      &:nth-of-type(even) {
-        background-color: #E8E8E8;
+    }
+    .add {
+      display: flex;
+      height: 30%;
+      justify-content: center;
+      width: 100%;
+      padding: 5%;
+      .ember-view {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button {
+          width: 60%;
+          height: 45px;
+          background: white;
+          border: 2px solid black;
+          text-transform: uppercase;
+          font-size: 1em;
+          &:hover {
+            background-color: #213563;
+            color: white;
+          }
+        }
+        form {
+          display: flex;
+          align-items: center;
+          label {
+            margin: 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+          }
+          input {
+            height: 25px;
+            font-size: 1.1em;
+          }
+          button {
+            margin: 5px;
+            &:hover {
+              background-color: #213563;
+              color: white;
+            }
+          }
+        }
       }
     }
-
-
-    aside {
-      margin-left: 2%;
+  }
+  .question-content {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: transparentize(white, .4);
+    text-align: center;
+    .add-answer {
+      margin-top: 5%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ember-view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        button {
+          width:50%;
+          height: 45px;
+          background: white;
+          border: 2px solid black;
+          text-transform: uppercase;
+          font-size: 1rem;
+          margin: auto;
+          &:hover {
+            background-color: #213563;
+            color: white;
+          }
+        }
+        form {
+          display: flex;
+          align-items: center;
+          label {
+            margin: 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+          }
+          input {
+            height: 25px;
+            font-size: .7em;
+          }
+          button {
+            margin: 5px;
+            font-size: 1rem;
+            &:hover {
+              background-color: #213563;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .answer-content {
+    display: flex;
+    flex-wrap: wrap;
+    .ember-view {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+      font-size: 1.3em;
+      text-transform: capitalize;
+      h4 {
+        margin: 2% 0 0 0;
+      }
+      button {
+        width: 60%;
+        height: 45px;
+        background: white;
+        border: 2px solid black;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 5%;
+        &:hover {
+          background-color: #213563;
+          color: white;
+        }
+      }
     }
   }
 }
