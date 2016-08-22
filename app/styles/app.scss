@@ -215,6 +215,8 @@ nav {
   }
   .admin-edit {
     padding: 5%;
+    margin-top: 5%;
+    text-transform: capitalize;
     button {
       width: 30%;
       height: 30px;
@@ -222,7 +224,7 @@ nav {
       border: 2px solid black;
       text-transform: uppercase;
       font-size: .8rem;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
       &:hover {
         background-color: #213563;
         color: white;
