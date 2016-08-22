@@ -212,4 +212,20 @@ nav {
       }
     }
   }
+  .admin-edit {
+    padding: 5%;
+    button {
+      width: 30%;
+      height: 30px;
+      background: white;
+      border: 2px solid black;
+      text-transform: uppercase;
+      font-size: .8rem;
+      margin-bottom: 5%;
+      &:hover {
+        background-color: #213563;
+        color: white;
+      }
+    }
+  }
 }
