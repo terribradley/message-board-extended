@@ -1,7 +1,7 @@
 <section class="saved-questions">
   {{#each questionList.items as |item|}}
   <div class="saved">
-    <h2>{{item.content}}</h2>
+    <h2>{{#link-to 'question' question.id}}{{item.content}}{{/link-to}}</h2>
     <button {{action 'remove' item}}>Remove This Question</button>
   </div>
   {{else}}

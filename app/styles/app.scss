@@ -256,9 +256,13 @@ nav {
       display: flex;
       align-items: center;
       flex-direction: column;
-      text-transform: capitalize;
       &:last-of-type {
         margin-bottom: 5%;
+      }
+      a {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #213563;
       }
       }
       button {
