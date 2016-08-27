@@ -2,3 +2,4 @@
 <h4>{{question.author}} asks: </h4>
 <h2>{{popular-question question}}{{question.content}}</h2>
 <button>{{#link-to 'question' question.id}}Have an Answer?{{/link-to}}</button>
+<button {{action 'addToList' question}}>Save This Question for later</button>

@@ -1,0 +1,9 @@
+<ul>
+  {{#each questionList.items as |item|}}
+    <li>{{item.content}}</li>
+    <button {{action 'remove' item}}>Remove This Question</button>
+  {{else}}
+    <p>You have no saved Questions, yet!</p>
+  {{/each}}
+</ul>
+<button {{action 'empty'}}>Empty your List</button>
