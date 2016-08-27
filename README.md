@@ -1,5 +1,5 @@
 # Message-board
-This app uses Ember to create a question and answer message board. Users can submit, update and delete questions while other users are able to click that question on the homepage and add an answer.  They are also able to delete their answers as well.
+This app uses Ember to create a question and answer message board. Users can submit, update and delete questions while other users are able to click that question on the homepage and add an answer. They can also save questions for later if they want to come back to answer.  The app highlights popular questions and lists answers in order by the number of times they've been voted for.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/terribradley/message-board.git` this repository
+* `git clone https://github.com/terribradley/message-board-extended.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
