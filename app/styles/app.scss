@@ -12,10 +12,11 @@ nav {
       margin-top: 15px;
       list-style-type: none;
       font-size: 1.2em;
+      text-transform: uppercase;
     }
     a {
       text-decoration: none;
-      color: black;;
+      color: #213563;
     }
   }
 }
@@ -81,6 +82,16 @@ nav {
           &:hover {
             color: white;
           }
+          }
+        }
+        #add-button {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black;
+          font-size: .9rem;
+          margin-top: 8px;
+          &:hover {
+            color: white;
           }
         }
         img {
@@ -233,6 +244,35 @@ nav {
         background-color: #213563;
         color: white;
       }
+    }
+  }
+  .saved-questions {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .saved {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-transform: capitalize;
+      &:last-of-type {
+        margin-bottom: 5%;
+      }
+      }
+      button {
+        width: 40%;
+        height: 45px;
+        background: white;
+        border: 2px solid black;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 5%;
+        &:hover {
+          background-color: #213563;
+          color: white;
+        }
     }
   }
 }

@@ -1,9 +1,13 @@
-<ul>
+<section class="saved-questions">
   {{#each questionList.items as |item|}}
-    <li>{{item.content}}</li>
+  <div class="saved">
+    <h2>{{item.content}}</h2>
     <button {{action 'remove' item}}>Remove This Question</button>
+  </div>
   {{else}}
-    <p>You have no saved Questions, yet!</p>
+  <p>You have no saved Questions, yet!</p>
   {{/each}}
-</ul>
-<button {{action 'empty'}}>Empty your List</button>
+
+  <button {{action 'empty'}}>Empty your List</button>
+
+</section>
