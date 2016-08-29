@@ -4,34 +4,14 @@
 <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
 <button {{action 'upvote' answer}}>Like</button>
 
-{{#if ranked}}
-  <h1>Top Rated Answers:</h1>
-  <button class="btn" {{action "toggleSort"}}>Show Chronologically</button>
-  <hr>
-  {{#each sortedAnswers as |answer index|}}
-    {{answer-star index}}
-    <p>Score: {{answer.upvotes}}</p>
-    <button {{action 'upvote' answer}}>Like</button>
-    <button {{action 'downvote' answer}}>Don't Like</button>
-    <h4>{{answer.username}} says,</h4>
-    <p>{{answer.content}}</p>
 
-  {{else}}
-    <p>No answers yet!</p>
-  {{/each}}
-{{else}}
-  <h1>Oldest Answers to Newest:</h1>
-  <button {{action "toggleSort"}}>Most liked</button>
-  <hr>
-  {{#each answers as |answer|}}
-    <p>Score: {{answer.upvotes}}</p>
-    <button {{action 'upvote' answer}}>like</button>
-    <button {{action 'downvote' answer}}>Don't like</button>
-    <h4>{{answer.username}} says,</h4>
-    <p>{{answer.content}}</p>
-    <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
-    <hr>
-  {{else}}
-    <p>No answers yet!</p>
-  {{/each}}
-{{/if}}
+There were {{answerAmount}} answers!
+  <h1>Top Answers:</h1>
+    {{#each sortedAnswers as |answer|}}
+      <h4>{{answer.username}} answered:</h4>
+      <p>{{answer.content}}</p>
+      <p>Likes: {{answer.upvotes}}</p>
+      <button {{action 'upvote' answer}}>Like</button>
+      <button {{action 'downvote' answer}}>Don't Like</button>
+      <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
+    {{/each}}
