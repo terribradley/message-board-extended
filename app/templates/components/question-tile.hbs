@@ -1,5 +1,8 @@
 
 <h4>{{question.author}} asks: </h4>
 <h2>{{popular-question question}}{{question.content}}</h2>
+<div class="answer-amount">
+  {{answerAmount}}
+</div>
 <button>{{#link-to 'question' question.id}}Have an Answer?{{/link-to}}</button>
 <button id="add-button"{{action 'addToList' question}}>Save This Question for later</button>

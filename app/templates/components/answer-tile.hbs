@@ -2,16 +2,12 @@
 <h4>{{answer.username}} answered: </h4>
 <p>{{answer.content}} </p>
 <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
-<button {{action 'upvote' answer}}>Like</button>
 
 
-There were {{answerAmount}} answers!
-  <h1>Top Answers:</h1>
-    {{#each sortedAnswers as |answer|}}
+
+<!-- There were {{answerAmount}} answers!
+    {{#each anser as |answer|}}
       <h4>{{answer.username}} answered:</h4>
       <p>{{answer.content}}</p>
-      <p>Likes: {{answer.upvotes}}</p>
-      <button {{action 'upvote' answer}}>Like</button>
-      <button {{action 'downvote' answer}}>Don't Like</button>
       <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
-    {{/each}}
+    {{/each}} -->
