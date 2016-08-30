@@ -10,7 +10,7 @@ export default Ember.Component.extend({
      return "This only has " + answerTotal.toString() + " answer.";
    } else if (answerTotal < 4) {
      return "This one need's help! It only has " + answerTotal.toString() + " answers.";
-   } else if (answerTotal > 5) {
+   } else if (answerTotal >= 5) {
      return "Look at the red icon above! This one is popular. It has " + answerTotal.toString() + " answers.";
    }
  }),
