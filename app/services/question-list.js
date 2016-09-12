@@ -12,6 +12,4 @@ export default Ember.Service.extend({
   empty() {
     this.get('items').clear();
   }
-
-
 });
